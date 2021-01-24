@@ -2,8 +2,6 @@ package domain_test
 
 import (
 	"encoder/domain"
-	"fmt"
-	"os"
 	"testing"
 	"time"
 
@@ -39,6 +37,5 @@ func TestVideoValidateCorrectly(t *testing.T) {
 
 	err := video.Validate()
 
-	fmt.Fprintf(os.Stderr, "ERRO: %v\n", err)
 	require.Nil(t, err)
 }
